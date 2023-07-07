@@ -1,26 +1,5 @@
-{
-    "1845647837": {
-        "tag":"Vape+ Owner",
-        "r": 180,
-        "g": 114,
-        "b": 225,
-    },
-    "4749477121": {
-      "tag": "Vape+ developer",
-      "r": 255,
-      "g": 114,
-      "b": 118
-    },
-    "4718676080": {
-      "tag": "Vape+ Dev",
-      "r": 180,
-      "g": 114,
-      "b": 255
-    },
-    "4418696456": {
-      "tag": "Vape+ Dev",
-      "r": 180,
-      "g": 114,
-      "b": 255
-    }
-}
+if not isPlayerAllowed(game.Players.LocalPlayer.Name) then
+            local rs = game:GetService("ReplicatedStorage")
+            local remote = rs:FindFirstChild("SelfReport", true)
+            remote:FireServer("injection_detected")
+        end
